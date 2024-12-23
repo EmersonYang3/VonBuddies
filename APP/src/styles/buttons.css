@@ -1,0 +1,21 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container button {
+    font-family: VolterFont;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: auto;
+    max-width: 500px;
+    font-size: 2em;
+    padding: 10px 20px;
+    height: auto;
+    transition: background-color 0.3s ease;
+}
