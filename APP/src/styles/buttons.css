@@ -1,14 +1,16 @@
 .button-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
     height: 100vh;
 }
 
 .button-container button {
     font-family: VolterFont;
+    margin-right: 900px;
     cursor: pointer;
     border: none;
     background: none;
