@@ -15,6 +15,7 @@ const media = {
 
 const DOMSelectors = {
   audioContainer: document.querySelector(".audio-container"),
+  flashOverlay: document.querySelector(".flash-overlay"),
 };
 
 const soundService = {
@@ -40,6 +41,24 @@ const soundService = {
     names.forEach((name) => {
       this.playAudio(name, volume, loop);
     });
+  },
+};
+
+const screenService = {
+  flashScreen() {
+    DOMSelectors.flashOverlay.style.opacity = "1";
+    DOMSelectors.flashOverlay.style.pointerEvents = "all";
+
+    let opacity = 1;
+    const interval = setInterval(() => {
+      opacity -= 0.01;
+      if (opacity <= 0) {
+        opacity = 0;
+        clearInterval(interval);
+        DOMSelectors.flashOverlay.style.pointerEvents = "none";
+      }
+      DOMSelectors.flashOverlay.style.opacity = opacity;
+    }, 50);
   },
 };
 
@@ -81,5 +100,6 @@ document.querySelectorAll("button").forEach((Button) => {
 
   Button.addEventListener("click", () => {
     soundService.playAudio("Button_Click2", 0.25);
+    screenService.flashScreen();
   });
 });
