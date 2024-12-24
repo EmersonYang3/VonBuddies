@@ -1,4 +1,9 @@
 @font-face {
     font-family: 'VolterFont';
     src: url('../../assets/VolterFont.ttf');
+    overflow-y: hidden;
+}
+
+body, html {
+    overflow: hidden;
 }
