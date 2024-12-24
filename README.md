@@ -2,7 +2,8 @@
 
 ## JFG (Just For Gags)
 
-##           Honestly, I thought it would be funny to see how it would actually
+## Honestly, I thought it would be funny to see how it would actually
+
           look as an anti-privacy screen. The idea hit me when I was randomly in
           bed, scrolling on Instagram and saw the anti-privacy screen so I made
           this just for laughs and gags lol.
@@ -24,6 +25,6 @@
 - UI Design Inspiration > FNAF 1 and FNAF 2 by Scott Cawton
 - Volter Font > https://fontmeme.com/fonts/volter-goldfish-font/#google_vignette
 - TV Static Tutorial > https://www.youtube.com/watch?v=e55BUTz9AlY
-- FNAF Title Screen > https://www.deviantart.com/ropec4d1637/art/FNaF1-Title-Screen-847330560
+- Von Gif > https://media1.tenor.com/m/mTQgXH7XefEAAAAd/evil-king-von-king-von.gif
 - King Von Anti Privacy Screen Gif > https://knowyourmeme.com/photos/2971502-king-von-anti-piracy-screen-king-von-stare
 - Icon > https://icon-icons.com/icon/halloween-horror-skeleton-skull/109032
