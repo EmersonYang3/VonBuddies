@@ -14,7 +14,6 @@
 - VHS Hum > https://pixabay.com/sound-effects/real-vhs-169982/
 - Prom > https://pixabay.com/users/lucafrancini-19914739/
 - Alarm > https://pixabay.com/sound-effects/alarm-no3-14864/
-- Talk > https://pixabay.com/sound-effects/mech-keyboard-02-102918/
 - Flash > https://pixabay.com/sound-effects/camera-flash-204151/
 
 ## Visuals retrieved from:
