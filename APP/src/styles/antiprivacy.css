@@ -1,8 +1,42 @@
-
 .anti-privacy-page {
-    position: absolute;
+    position: relative;
     z-index: 100;
+    align-self: center;
     width: 100%;
     height: 100%;
-    background-color: black;
+}
+
+#warning-text {
+    position: relative;
+    z-index: 200;
+    font-family: VolterFont;
+    font-size: 50px;
+    color: red;
+    justify-self: center;
+    margin-top: 5px;
+}
+
+#anti-piracy-image {
+    position: absolute;
+    z-index: 20;
+    background-image: url("https://media1.tenor.com/m/mTQgXH7XefEAAAAd/evil-king-von-king-von.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-self: center;
+    width: 45vw;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#anti-piracy-text {
+    position: relative;
+    z-index: 200;
+    font-family: VolterFont;
+    color: red;
+    margin-top: 45vh;
+    padding: 200px;
+    font-size: 30px;
+    text-align: center;
 }

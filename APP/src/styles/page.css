@@ -42,3 +42,14 @@
     padding-right: 15px;
     margin: 0; 
 }
+
+.big-justice {
+    position: absolute;
+    background-image: url("https://media1.tenor.com/m/zhRLXRhLqWQAAAAd/withered-big-justice-evil-big-justice.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-self: center;
+    margin-left: 35vw;
+    width: 30vw;
+    height: 90vh;
+}

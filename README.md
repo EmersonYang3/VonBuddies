@@ -14,7 +14,6 @@
 - Menu Button Hovers > https://pixabay.com/sound-effects/lighter-click-271118/
 - Menu Button Clicks > https://pixabay.com/sound-effects/click-233950/
 - VHS Hum > https://pixabay.com/sound-effects/real-vhs-169982/
-- lumAduio > https://pixabay.com/sound-effects/estonia-eas-alarm-1984-sad-249124/ (yes it's a EAS alarm)
 - Prom > https://pixabay.com/users/lucafrancini-19914739/
 - Alarm > https://pixabay.com/sound-effects/alarm-no3-14864/
 - Talk > https://pixabay.com/sound-effects/mech-keyboard-02-102918/

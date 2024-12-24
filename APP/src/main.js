@@ -76,6 +76,14 @@ const screenService = {
     }, 8);
   },
 
+  antiPrivacySequence() {
+    soundService.playAudio("Alarm", 0.2);
+    this.alarmInterval = setInterval(() => {
+      soundService.playAudio("Alarm", 0.2);
+    }, 5000);
+    soundService.playAudio("Main_Menu", 1, true);
+  },
+
   route(viewID) {
     DOMSelectors.antiPrivacyPage.style.display = "none";
     DOMSelectors.titleScreenMenu.style.display = "none";
@@ -85,11 +93,13 @@ const screenService = {
     if (viewID === "enter-game-button") {
       DOMSelectors.antiPrivacyPage.style.display = "block";
       soundService.removeAllAudio();
+      this.antiPrivacySequence();
     } else if (viewID === "asset-credit-button") {
       DOMSelectors.assetCreditMenu.style.display = "block";
     } else if (viewID === "inspiration-button") {
       DOMSelectors.inspirationMenu.style.display = "block";
     } else if (viewID === "return") {
+      clearInterval(this.alarmInterval);
       this.startScreen();
     }
   },
