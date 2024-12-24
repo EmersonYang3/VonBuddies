@@ -2,6 +2,7 @@ const audios = {
   Main_Menu: "assets/audio/music.mp3",
   VHS_Hum: "assets/audio/vhs.mp3",
   Button_Click: "assets/audio/buttonclick.mp3",
+  Button_Click2: "assets/audio/buttonclick2.mp3",
 };
 
 const DOMSelectors = {
@@ -9,7 +10,7 @@ const DOMSelectors = {
 };
 
 const soundService = {
-  playAudio(name) {
+  playAudio(name, volume = 1) {
     DOMSelectors.audioContainer.insertAdjacentHTML(
       `beforebegin`,
       `<audio controls autoplay>
@@ -18,10 +19,10 @@ const soundService = {
     );
 
     const newAudioElement = DOMSelectors.audioContainer.previousElementSibling;
-
     newAudioElement.addEventListener("ended", () => {
       newAudioElement.remove();
     });
+    newAudioElement.volume = volume;
   },
 };
 
@@ -35,5 +36,9 @@ document.querySelectorAll("button").forEach((Button) => {
     if (Button.textContent.startsWith(">> ")) {
       Button.textContent = Button.textContent.slice(2);
     }
+  });
+
+  Button.addEventListener("click", () => {
+    soundService.playAudio("Button_Click2", 0.2);
   });
 });
