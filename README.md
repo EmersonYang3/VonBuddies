@@ -1,12 +1,10 @@
 # VonBuddies - Fun small parody of FNAF but with the new King Von anti privacy screen!
 
+# NOTE!!! THIS WAS NOT MADE FOR MOBILE DEVICES!!! Please access this on a PC or LAPTOP!!
+
 ## JFG (Just For Gags)
 
-## Honestly, I thought it would be funny to see how it would actually
-
-          look as an anti-privacy screen. The idea hit me when I was randomly in
-          bed, scrolling on Instagram and saw the anti-privacy screen so I made
-          this just for laughs and gags lol.
+## Honestly, I thought it would be funny to see how it would actually look as an anti-privacy screen. The idea hit me when I was randomly in bed, scrolling on Instagram and saw the anti-privacy screen so I made this just for laughs and gags lol.
 
 ## Audios:
 
