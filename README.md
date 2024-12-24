@@ -2,7 +2,7 @@
 
 ## JFG (Just For Gags)
 
-## Saw this meme like a week ago and thought it actually looked like it could make a really good FNAF styled loading screen!
+## Saw this meme like a week ago and thought it actually looked like it could make a really good FNAF styled loading screen and transition it into a anti privacy screen!
 
 ## Audios:
 
@@ -18,3 +18,6 @@
 
 - UI Design Inspiration > FNAF 1 and FNAF 2 by Scott Cawton
 - Volter Font > https://fontmeme.com/fonts/volter-goldfish-font/#google_vignette
+- TV Static Tutorial > https://www.youtube.com/watch?v=e55BUTz9AlY
+- FNAF Title Screen > https://www.deviantart.com/ropec4d1637/art/FNaF1-Title-Screen-847330560
+- King Von Anti Privacy Screen Gif > https://knowyourmeme.com/photos/2971502-king-von-anti-piracy-screen-king-von-stare
