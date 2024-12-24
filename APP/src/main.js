@@ -64,11 +64,25 @@ const screenService = {
         DOMSelectors.flashOverlay.style.pointerEvents = "none";
       }
       DOMSelectors.flashOverlay.style.opacity = opacity;
-    }, 50);
+    }, 8);
   },
 
   route(viewID) {
     DOMSelectors.titleScreenMenu.style.display = "none";
+    DOMSelectors.assetCreditMenu.style.display = "none";
+    DOMSelectors.inspirationMenu.style.display = "none";
+
+    if (viewID === "asset-credit-button") {
+      DOMSelectors.assetCreditMenu.style.display = "block";
+    } else if (viewID === "inspiration-button") {
+      DOMSelectors.inspirationMenu.style.display = "block";
+    } else if (viewID === "return") {
+      this.startScreen();
+    }
+  },
+
+  startScreen() {
+    DOMSelectors.titleScreenMenu.style.display = "block";
     DOMSelectors.assetCreditMenu.style.display = "none";
     DOMSelectors.inspirationMenu.style.display = "none";
   },
@@ -117,3 +131,5 @@ document.querySelectorAll("button").forEach((Button) => {
     screenService.flashScreen();
   });
 });
+
+screenService.startScreen();

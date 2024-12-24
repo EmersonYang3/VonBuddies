@@ -4,11 +4,11 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-top: 350px;
+    margin-top: 400px;
     height: auto;
 }
 
-button {
+.button-container button {
     font-family: VolterFont;
     z-index: 10000;
     color: white;
@@ -18,7 +18,7 @@ button {
     border: none;
     cursor: none;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     font-size: 2.5em;
     padding: 10px 20px;
     height: auto;
@@ -26,6 +26,22 @@ button {
     display: flex;
     align-items: flex-start;
     transform-style: preserve-3d;
+}
+
+#return {
+    margin-top: 75vh;
+    margin-left: 2vw;
+    font-family: VolterFont;
+    background: none;
+    border: none;
+    font-size: 2.5em;
+    color: white;
+    position: absolute;
+    z-index: 100000;
+}
+
+#return:hover {
+    cursor: none;
 }
 
 button:active {

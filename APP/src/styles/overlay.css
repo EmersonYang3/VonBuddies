@@ -11,7 +11,7 @@
 .flash-overlay {
     position: absolute;
     inset: -200%;
-    z-index: 11110;
+    z-index: 111110;
     pointer-events: none;
     background-color: white;
     opacity: 0%;
