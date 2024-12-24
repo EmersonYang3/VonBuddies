@@ -10,6 +10,7 @@
 
 button {
     font-family: VolterFont;
+    z-index: 10000;
     color: white;
     text-align: left;
     margin-right: 40%;
