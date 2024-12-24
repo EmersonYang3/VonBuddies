@@ -4,7 +4,9 @@ const audios = {
   Button_Click: "assets/audio/buttonclick.mp3",
   Button_Click2: "assets/audio/buttonclick2.mp3",
   Alarm: "assets/audio/alarm.mp3",
+  Prom: "assets/audio/prom.mp3",
   TalkCharAudio: "assets/audio/talk.mp3",
+  FlashAudio: "assets/audio/flash_audio.mp3",
 };
 
 const media = {
@@ -15,6 +17,9 @@ const media = {
 
 const DOMSelectors = {
   audioContainer: document.querySelector(".audio-container"),
+  titleScreenMenu: document.querySelector(".main-menu"),
+  assetCreditMenu: document.querySelector(".asset-credit-page"),
+  inspirationMenu: document.querySelector(".inspiration-page"),
   flashOverlay: document.querySelector(".flash-overlay"),
 };
 
@@ -46,6 +51,7 @@ const soundService = {
 
 const screenService = {
   flashScreen() {
+    soundService.playAudio("FlashAudio");
     DOMSelectors.flashOverlay.style.opacity = "1";
     DOMSelectors.flashOverlay.style.pointerEvents = "all";
 
@@ -60,10 +66,17 @@ const screenService = {
       DOMSelectors.flashOverlay.style.opacity = opacity;
     }, 50);
   },
+
+  route(viewID) {
+    DOMSelectors.titleScreenMenu.style.display = "none";
+    DOMSelectors.assetCreditMenu.style.display = "none";
+    DOMSelectors.inspirationMenu.style.display = "none";
+  },
 };
 
 document.addEventListener("click", function initAudio() {
   soundService.playAudio("VHS_Hum", 1, true);
+  soundService.playAudio("Prom", 0.5, true);
   document.removeEventListener("click", initAudio);
 });
 
@@ -100,6 +113,7 @@ document.querySelectorAll("button").forEach((Button) => {
 
   Button.addEventListener("click", () => {
     soundService.playAudio("Button_Click2", 0.25);
+    screenService.route(Button.id);
     screenService.flashScreen();
   });
 });
