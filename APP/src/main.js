@@ -56,6 +56,7 @@ const screenService = {
     DOMSelectors.flashOverlay.style.pointerEvents = "all";
 
     let opacity = 1;
+
     const interval = setInterval(() => {
       opacity -= 0.01;
       if (opacity <= 0) {

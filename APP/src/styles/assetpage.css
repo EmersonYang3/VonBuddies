@@ -1,0 +1,24 @@
+.content {
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 10vw;
+    z-index: 10000;
+    font-family: VolterFont;
+    color: white;
+    font-size: 25px;
+}
+
+.content a {
+    text-decoration: none;
+    color: inherit; 
+    cursor: none; 
+}
+  
+.content a:hover {
+    text-decoration: underline; 
+    color: red; 
+}
+  
+.content h2 {
+    color: rgb(255, 0, 0);
+}

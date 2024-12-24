@@ -6,7 +6,7 @@
 
 ## Audios:
 
-- Montagem Lunar Diamante (Slowed) > retrieved from: https://www.youtube.com/watch?v=BMgQ2kMr1I4
+- Montagem Lunar Diamante (Slowed) > https://www.youtube.com/watch?v=BMgQ2kMr1I4
 - Menu Button Hovers > https://pixabay.com/sound-effects/lighter-click-271118/
 - Menu Button Clicks > https://pixabay.com/sound-effects/click-233950/
 - VHS Hum > https://pixabay.com/sound-effects/real-vhs-169982/
