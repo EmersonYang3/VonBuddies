@@ -18,6 +18,7 @@ const media = {
 const DOMSelectors = {
   audioContainer: document.querySelector(".audio-container"),
   titleScreenMenu: document.querySelector(".main-menu"),
+  antiPrivacyPage: document.querySelector(".anti-privacy-page"),
   assetCreditMenu: document.querySelector(".asset-credit-page"),
   inspirationMenu: document.querySelector(".inspiration-page"),
   flashOverlay: document.querySelector(".flash-overlay"),
@@ -47,6 +48,13 @@ const soundService = {
       this.playAudio(name, volume, loop);
     });
   },
+
+  removeAllAudio() {
+    const audioElements = document.querySelectorAll("audio");
+    audioElements.forEach((audio) => {
+      audio.remove();
+    });
+  },
 };
 
 const screenService = {
@@ -69,11 +77,15 @@ const screenService = {
   },
 
   route(viewID) {
+    DOMSelectors.antiPrivacyPage.style.display = "none";
     DOMSelectors.titleScreenMenu.style.display = "none";
     DOMSelectors.assetCreditMenu.style.display = "none";
     DOMSelectors.inspirationMenu.style.display = "none";
 
-    if (viewID === "asset-credit-button") {
+    if (viewID === "enter-game-button") {
+      DOMSelectors.antiPrivacyPage.style.display = "block";
+      soundService.removeAllAudio();
+    } else if (viewID === "asset-credit-button") {
       DOMSelectors.assetCreditMenu.style.display = "block";
     } else if (viewID === "inspiration-button") {
       DOMSelectors.inspirationMenu.style.display = "block";
@@ -84,6 +96,7 @@ const screenService = {
 
   startScreen() {
     DOMSelectors.titleScreenMenu.style.display = "block";
+    DOMSelectors.antiPrivacyPage.style.display = "none";
     DOMSelectors.assetCreditMenu.style.display = "none";
     DOMSelectors.inspirationMenu.style.display = "none";
   },

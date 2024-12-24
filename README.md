@@ -2,7 +2,10 @@
 
 ## JFG (Just For Gags)
 
-## Saw this meme like a week ago and thought it actually looked like it could make a really good FNAF styled loading screen and transition it into a anti privacy screen!
+##           Honestly, I thought it would be funny to see how it would actually
+          look as an anti-privacy screen. The idea hit me when I was randomly in
+          bed, scrolling on Instagram and saw the anti-privacy screen so I made
+          this just for laughs and gags lol.
 
 ## Audios:
 

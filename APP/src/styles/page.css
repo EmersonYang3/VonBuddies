@@ -1,0 +1,44 @@
+.asset-credit-page .content {
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 10vw;
+    z-index: 10000;
+    font-family: VolterFont;
+    color: white;
+    font-size: 25px;
+}
+
+.asset-credit-page .content a {
+    text-decoration: none;
+    color: inherit; 
+    cursor: none; 
+}
+  
+.asset-credit-page .content a:hover {
+    text-decoration: underline; 
+    color: red; 
+}
+  
+.asset-credit-page .content h2 {
+    color: rgb(255, 0, 0);
+}
+
+.inspiration-page .content {
+    font-family: VolterFont;
+    width: 100%;
+    font-size: 25px;
+    position: absolute;
+    z-index: 10000;
+    margin-top: -25px;
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+.inspiration-page .content p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0; 
+}
