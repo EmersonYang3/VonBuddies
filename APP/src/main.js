@@ -1,12 +1,12 @@
 const audios = {
-  Main_Menu: "assets/audio/music.mp3",
-  VHS_Hum: "assets/audio/vhs.mp3",
-  Button_Click: "assets/audio/buttonclick.mp3",
-  Button_Click2: "assets/audio/buttonclick2.mp3",
-  Alarm: "assets/audio/alarm.mp3",
-  Prom: "assets/audio/prom.mp3",
-  TalkCharAudio: "assets/audio/talk.mp3",
-  FlashAudio: "assets/audio/flash_audio.mp3",
+  Main_Menu: "/assets/audio/music.mp3",
+  VHS_Hum: "/assets/audio/vhs.mp3",
+  Button_Click: "/assets/audio/buttonclick.mp3",
+  Button_Click2: "/assets/audio/buttonclick2.mp3",
+  Alarm: "/assets/audio/alarm.mp3",
+  Prom: "/assets/audio/prom.mp3",
+  TalkCharAudio: "/assets/audio/talk.mp3",
+  FlashAudio: "/assets/audio/flash_audio.mp3",
 };
 
 const media = {
