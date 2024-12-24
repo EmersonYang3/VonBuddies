@@ -1,23 +1,24 @@
 .button-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    height: 100vh;
+    margin-top: 350px;
+    height: auto;
 }
 
 .button-container button {
     font-family: VolterFont;
+    color: white;
     text-align: left;
-    margin-right: 900px;
+    margin-right: 40%;
     cursor: pointer;
     border: none;
     background: none;
     width: 100%;
-    max-width: 500px;
-    font-size: 2em;
+    max-width: 800px;
+    font-size: 2.5em;
     padding: 10px 20px;
     height: auto;
     transition: background-color 0.3s ease, transform 0.05s ease-in-out;
@@ -27,20 +28,4 @@
 
 .button-container button:active {
     transform: scale(0.95);
-}
-
-@keyframes animate-out-left {
-    20% {
-        transform: translateX(20px);
-    }
-    50% {
-        transform: translateX(-10px);
-    }
-    100% {
-        transform: translateX(-900px);
-    }
-}
-
-button.animate-out-left { 
-    animation: animate-out-left 1.5s cubic-bezier(0.5, -0.3, 0.5, 1.4);
 }

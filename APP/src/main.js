@@ -1,11 +1,3 @@
-const LoadingSelectors = {
-  loadingClassContainer: document.querySelector(".loading-screen-container"),
-  loadingText: document.getElementById("loading-text"),
-  loadingLine: document.getElementById("loading-line"),
-  loadingProgress: document.getElementById("loading-progress"),
-  enterGameButton: document.getElementById("enter-game-button"),
-};
-
 const audios = {
   Main_Menu: "assets/audio/music.mp3",
   VHS_Hum: "assets/audio/vhs.mp3",
