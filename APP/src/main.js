@@ -1,12 +1,12 @@
 const audios = {
-  Main_Menu: "./audio/music.mp3",
-  VHS_Hum: "./audio/vhs.mp3",
-  Button_Click: "./audio/buttonclick.mp3",
-  Button_Click2: "./audio/buttonclick2.mp3",
-  Alarm: "./audio/alarm.mp3",
-  Prom: "./audio/prom.mp3",
-  TalkCharAudio: "./audio/talk.mp3",
-  FlashAudio: "./audio/flash_audio.mp3",
+  Main_Menu: "/public/assets/audio/music.mp3",
+  VHS_Hum: "/public/assets/audio/vhs.mp3",
+  Button_Click: "/public/assets/audio/buttonclick.mp3",
+  Button_Click2: "/public/assets/audio/buttonclick2.mp3",
+  Alarm: "/public/assets/audio/alarm.mp3",
+  Prom: "/public/assets/audio/prom.mp3",
+  TalkCharAudio: "/public/assets/audio/talk.mp3",
+  FlashAudio: "/public/assets/audio/flash_audio.mp3",
 };
 
 const DOMSelectors = {
