@@ -4,6 +4,7 @@ const audios = {
   Button_Click: "assets/audio/buttonclick.mp3",
   Button_Click2: "assets/audio/buttonclick2.mp3",
   Alarm: "assets/audio/alarm.mp3",
+  TalkCharAudio: "assets/audio/talk.mp3",
 };
 
 const media = {
@@ -17,31 +18,53 @@ const DOMSelectors = {
 };
 
 const soundService = {
-  playAudio(name, volume = 1) {
+  playAudio(name, volume = 1, loop = false) {
     DOMSelectors.audioContainer.insertAdjacentHTML(
       `beforebegin`,
-      `<audio controls autoplay>
+      `<audio controls autoplay ${loop ? "loop" : ""}>
         <source src="${audios[name]}" type="audio/mpeg" />
       </audio>`
     );
 
     const newAudioElement = DOMSelectors.audioContainer.previousElementSibling;
-    newAudioElement.addEventListener("ended", () => {
-      newAudioElement.remove();
-    });
     newAudioElement.volume = volume;
+
+    if (!loop) {
+      newAudioElement.addEventListener("ended", () => {
+        newAudioElement.remove();
+      });
+    }
   },
 
-  playMultipleAudios(names, volume = 1) {
+  playMultipleAudios(names, volume = 1, loop = false) {
     names.forEach((name) => {
-      this.playAudio(name, volume);
+      this.playAudio(name, volume, loop);
     });
   },
 };
 
 document.addEventListener("click", function initAudio() {
-  soundService.playAudio("VHS_Hum");
+  soundService.playAudio("VHS_Hum", 1, true);
   document.removeEventListener("click", initAudio);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cursor = document.querySelector(".cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  });
+
+  document.addEventListener("mousedown", () => {
+    cursor.style.width = "5px";
+    cursor.style.height = "5px";
+  });
+
+  document.addEventListener("mouseup", () => {
+    cursor.style.width = "10px";
+    cursor.style.height = "10px";
+  });
 });
 
 document.querySelectorAll("button").forEach((Button) => {

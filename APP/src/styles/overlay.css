@@ -1,13 +1,26 @@
 .vhs-overlay {
     position: absolute;
     inset: -200%;
-    background-image: url("../../public/assets/images/noise.png");
+    background-image: url("/assets/images/noise.png");
     opacity: 30%;
-    z-index: 0;
+    z-index: 9999;
     pointer-events: none;
     animation: shift 0.04s linear infinite both;
 }
 
+  
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s ease, height 0.15s ease; 
+}
+  
 @keyframes shift {
     0% {
         transform: translateX(10%) translateY(10%);

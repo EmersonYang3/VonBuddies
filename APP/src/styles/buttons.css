@@ -13,9 +13,9 @@ button {
     color: white;
     text-align: left;
     margin-right: 40%;
-    cursor: pointer;
     background: none;
     border: none;
+    cursor: none;
     width: 100%;
     max-width: 800px;
     font-size: 2.5em;
